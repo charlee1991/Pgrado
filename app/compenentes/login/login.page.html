@@ -1,0 +1,65 @@
+
+<ion-content >  
+  <h3 class="ion-text-center">Inicia Sesion</h3>
+<div>
+  <ion-slides spaceBetween="10" pager>
+    <ion-slide>
+      <ion-card>
+       
+        <div>
+          <img src="assets/imagenes/1.jpeg" alt="" style= "width:70%; height:50%;">
+        </div>
+        
+        <ion-item>   
+          <ion-label position="floating" color="success">Correo: <ion-icon name="mail-outline"></ion-icon>
+             </ion-label>  
+          <ion-input   placeholder= "Tú correo electronico aquí" [(ngModel)]="email" type="text" name ="email"><ion-icon name="contact">  </ion-icon></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating" color="success">Contraseña:
+            <ion-icon name="apps-outline"></ion-icon>
+           </ion-label>
+          <ion-input placeholder= "   Tu contraseña no puede tener menos de 6 digitos"  [(ngModel)]="password" type="password" name= "password"></ion-input>
+        </ion-item>
+        <ion-button  expand="block" shape="round"  (click)= "onsubmitLogin()" color="success" >Entrar</ion-button>
+        <!--paso 13 colocar el (click)= "OnsubmitLogin()"-->
+        
+        <p style="text-align: center;"> ¿No estas registrado?...  </p>
+        <p style="text-align: center; color:#c71585;" [routerLink]="['/registro']">Has un Clickeo Aquí</p>
+        <!--<ion-button  [routerLink]="['/registro']"  color ="success" expand ="block">Registrarse</ion-button>  este era un boton lo reemplace por el texto-->
+
+        </ion-card>
+
+
+      
+    </ion-slide>
+    <ion-slide>
+            <ion-card>
+              <img src="assets/imagenes/mostrario2.jpg" style= "width:70%; height:50%;"/>       
+                <ion-card-subtitle><strong >Puedes agendar tu pedido</strong> </ion-card-subtitle>
+                <ion-card-title color="success">Hacemos de su cumpleaños una experiencia unica</ion-card-title>     
+              <ion-card-content>
+              <p>Con este hermoso detalle </p> 
+              
+              <p>todo al alcance de un click</p>
+              
+              <p>No olvides registrarte para hacer tu compra</p>          
+              </ion-card-content>
+            </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card>
+        <img src="assets/imagenes/mostrario1.jpg" style= "width:100%; height:50%;"/>       
+          <ion-card-subtitle><strong >Los mejores servicios</strong> </ion-card-subtitle>
+          <ion-card-title color="success">¿Quieres salir con tus amigos? matala con un detalle hecho a mano</ion-card-title>     
+        <ion-card-content>        
+          <br>
+          <p>Registrate y da un vistaso a Nuestros productos, promociones, galerias </p>
+                     
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+</div>
+
+</ion-content>

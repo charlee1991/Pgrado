@@ -1,0 +1,62 @@
+<ion-content class="ion-padding">
+  <div class="form-container ion-padding">
+    <div class="login-title">
+      <h3 class="ion-text-center">Registro</h3>
+    </div>
+    <form [formGroup]='registroForm'>
+      <ion-list  >
+        <!--
+        <ion-item>
+          <ion-label position="floating">Nombre</ion-label>
+          <ion-input  type="text" [(ngModel)]="nombre" name="nombre"  placeholder= "Tú nombre aquí"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Apellido</ion-label>
+          <ion-input  type="text" [(ngModel)]="apellido" name="apellido"  placeholder= "Tú apellido aquí"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Razon social</ion-label>
+          <ion-input  type="text" [(ngModel)]="razon" name="razon"  placeholder= "El nombre de tu empresa"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">direccion</ion-label>
+          <ion-input  type="text" [(ngModel)]="direccion" name="direccion"  placeholder= "Tú direccion aquí"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Ciudad</ion-label>
+          <ion-input  type="text" [(ngModel)]="ciudad" name="ciudad"  placeholder= "Tú ciudad aquí"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Telefono</ion-label>
+          <ion-input  type="number" [(ngModel)]="telefono" name="telefono"  placeholder= "telefono"></ion-input>
+        </ion-item>-->
+        <ion-item>
+          <ion-label position="floating" >Nombre</ion-label>
+          <ion-input   formControlName="name"  placeholder= "Tú nombre con apellido"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating" >Correo electronico</ion-label>
+          <ion-input   formControlName="email" placeholder= "Tú correo aquí"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating" >Contraseña</ion-label>
+          <ion-input   formControlName="password"  placeholder= "********" type="password"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating" >Confirma la Contraseña</ion-label>
+          <ion-input  formControlName="confirm"  placeholder= "********" type="password"></ion-input>
+        </ion-item>
+      </ion-list>
+
+      <div class="btn-login ion-margin-top" >
+        <ion-button (click)= 'registro()' expand="block" shape="round" color="success">
+          Guardar
+        </ion-button>
+      </div>
+     
+    
+    </form>
+      
+  </div>
+  
+</ion-content>

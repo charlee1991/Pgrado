@@ -1,0 +1,96 @@
+
+<ion-header [translucent]="true">
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title style="text-align: center;">Promociones</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large"></ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container"> <!--no se borra-->
+
+    <!--Animacion-->
+    <ion-slides spaceBetween="10" pager>
+      <ion-slide>
+              <ion-card> <!--Tarjeta para el inicio de la aplicacion-->
+                <img src="assets/imagenes/2.png"/>       
+                  <ion-card-title>Titulo 1"</ion-card-title>  
+                  <ion-card-subtitle><strong >la forma mas rapida y segura de afiliarte </strong> </ion-card-subtitle>   
+                <ion-card-content>
+                 <p>Cel:  00-0000-00</p> 
+                  <br>
+                  <p>
+                    direccion ----
+                  </p>              
+                </ion-card-content>
+              </ion-card>
+      </ion-slide>
+      <ion-slide>
+              <ion-card>
+                <img src="assets/imagenes/3.jpg"/>       
+                  <ion-card-subtitle><strong >Conoce nuestras instalaciones </strong> </ion-card-subtitle>
+                  <ion-card-title>Titulo 1"</ion-card-title>     
+                <ion-card-content>
+                <p>Horarios de atencion;  </p> 
+                <br>
+                <p>lunes a viernes 7 am - 12 mm y de 2 pm - 6 pm</p>
+                <br>
+                <p>sabado 8 am - 1 pm</p>          
+                </ion-card-content>
+              </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card>
+          <img src="assets/imagenes/4.jpg"/>       
+            <ion-card-subtitle><strong >Los mejores servicios</strong> </ion-card-subtitle>
+            <ion-card-title>¿porqué escojer a GYG ?</ion-card-title>     
+          <ion-card-content>
+           <p>Tenemos el gusto de atentenderte con la mejor atencion</p>
+            <p>la mejor asesoria y precios accesibles</p>
+            <br>
+            <p> <---- Te invitamos a conocer nuestro menú de opciones en la barra izquierda </p>
+                       
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+    </ion-slides>
+  </div>  
+  <div>
+    <ion-button style ="margin-top: 110%;" color="primary" (click)= "Onlogout()" >Desconectarse</ion-button><!--se recomienda hacer este boton despues de tener desarrollados los permisos guardias: auth.guards y nologear para completar este boton debes entrar a servicios/auth y hacer la funcion onlogout-->
+  </div>  
+  <!--Boton de redes-->
+  <ion-fab horizontal="end" vertical="top" slot="fixed" edge style="padding-top: 63%;">
+    <ion-fab-button color="success">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list>
+      <ion-fab-button >
+        <ion-icon  style="color: blue;" name="logo-facebook"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button >
+        <a href="https://wa.me/573115195299">
+        <ion-icon name="logo-whatsapp" style="color:green;"></ion-icon>
+        </a>
+      </ion-fab-button>
+      <ion-fab-button >      
+          <ion-icon name="logo-instagram" style="color: brown;"></ion-icon>                
+      </ion-fab-button>
+      <ion-fab-button >
+        <ion-icon name="logo-youtube" style="color:red ;"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
+ 
+  
+</ion-content>
+
+<!--Pie de pagina-->
